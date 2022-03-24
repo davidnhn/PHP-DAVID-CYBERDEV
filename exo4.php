@@ -23,6 +23,7 @@
   }
 
   echo prixTotalTTC(2, 5, 0.2);
+  echo prixTotalTTC(8, 15, 0.2);
 
   ?>
 </body>
