@@ -8,17 +8,18 @@
 </head>
 <body>
   <?php
-  $a = 15;
-  $b = 23;
-  $br = '<br>';
 
-  echo " $a et $b";
-  echo $br;
+  function changer() {
+    echo "On fait des fonctions";
+  }
+  changer();
+  echo "<br>";
 
-  [$a, $b] = [$b, $a];
+  function addition($a, $b) {
+    return $a + $b;
+  }
 
-  echo "$a et $b";
-  
+  echo addition(20, 20);
   ?>
 </body>
 </html>
