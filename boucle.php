@@ -34,6 +34,43 @@ $resultats = array();
   showNext10(14, $resultats);
   random(10,30);
 
+
+
+  function returnMax($tab) {
+
+    $max = $tab[0];
+
+    for($i=0; $i < count($tab); $i++) {
+
+      if($tab[$i] > $max) {
+        $max = $tab[$i];
+      }
+    }
+    echo $max;
+    echo '<br>';
+
+  }
+
+  function returnMin($tab) {
+    $min = $tab[0];
+
+    for($i=0; $i < count($tab); $i++) {
+
+      if($tab[$i] < $min) {
+        $min = $tab[$i];
+      }
+    }
+    echo $min;
+    echo '<br>';
+
+  }
+
+
+
+
+  $tab = array(10, 25,6,33, 58,1,49,110);
+  returnMax($tab);
+  returnMin($tab);
   ?>
 </body>
 </html>
