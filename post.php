@@ -31,9 +31,9 @@ if(isset($_POST['prixArticleHt']) AND isset($_POST['quantite']) AND isset($_POST
     
     $prixTotalHT = $nbArticles * $prixArticleHT ;
     $prixTotalTTC = $prixTotalHT * (($tauxTVA/100) + 1);
-
+    $prixArrondi = round($prixTotalTTC, 2);
     
-    return "<p><strong>$prixTotalTTC</strong></p>";
+    return "<p><strong>$prixArrondi €</strong></p>";
     
   }
   
