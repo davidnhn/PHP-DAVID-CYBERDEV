@@ -42,12 +42,16 @@
         case $age>= 12:
           echo "Votre kid est en Cadet<br>";
           break;
+        default:
+          echo "Pas en âge de faire du sport";
+          break;
 
     }
   }
 
   isCategory2(15);
   isCategory2(8);
+  isCategory2(2);
   ?>
 </body>
 </html>
