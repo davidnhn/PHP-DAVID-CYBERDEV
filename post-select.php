@@ -45,6 +45,10 @@
       }
 
       echo "$nom est un.e $genre";
+
+      else {
+          echo "Veuillez remplir le formulaire"
+      }
     }
     ?>
 </body>
