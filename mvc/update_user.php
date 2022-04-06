@@ -20,7 +20,6 @@ if(isset($_GET['id']) AND $_GET['id'] != ''){
         echo '<script>document.querySelector("[name='.$key.']").value="'.$champ.'"</script>';
       }
     }
-  // echo '<p><a href="update_user.php?id='.$value['id_util'].'">Le prénom est égal a : '.$value['nom_util'].'</a></p>';
 }
 
 

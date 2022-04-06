@@ -92,5 +92,17 @@ function showAllUser($bdd) {
   }
 }
 
+function deleteUser($bdd,$id) {
+  try{
+    $req = $bdd->prepare("DELETE FROM utilisateur WHERE id_util= :id_util");
+    $req->execute(array(
+      'id_util' => $id
+    ));
+  }
+  catch(Exception $e)
+  {
+    die('Erreur : '.$e->getMessage());
+  }
+}
 
 ?>

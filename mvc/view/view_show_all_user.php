@@ -8,6 +8,6 @@
 </head>
 <body>
   <h1>Liste des utilisateurs</h1>
-
+<form action="" method="post">
 </body>
 </html>
